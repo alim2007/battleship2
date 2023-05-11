@@ -105,7 +105,7 @@ void updateBoard(int x, int y, int copyX, int copyY, int currShipSizeIndex, bool
 		for (int i = 0; i < shipSize; i++)
 		{
 			arr[copyY][copyX] = ' ';
-			copyX++; // Move to the next cell in the ship
+			copyX++; 
 		}
 	}
 
@@ -113,9 +113,9 @@ void updateBoard(int x, int y, int copyX, int copyY, int currShipSizeIndex, bool
 	{
 		if (x >= 0 && x < BOARD_SIZE && y >= 0 && y < BOARD_SIZE)
 		{
-			arr[y][x] = 'S'; // place the new ship
+			arr[y][x] = 'S';
 		}
-		x++; // Move to the next cell in the ship
+		x++; 
 	}
 }
 
